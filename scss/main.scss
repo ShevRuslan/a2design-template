@@ -1,2 +1,140 @@
 @import "fonts.scss";
 @import "header.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #ECF3FB;
+  padding: 0px 120px;
+
+  .preview {
+    display: flex;
+    gap: 16px;
+    padding-top: 60px;
+
+    .discount {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      color: #ffffff;
+      background: #1749B3;
+      box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+      border-radius: 32px;
+      padding: 114px 60px;
+
+      &__typography {
+        margin: 0;
+        font-family: 'Gotham Pro';
+        font-size: 36px;
+        width: 472px;
+      }
+
+      &__text {
+        margin: 0;
+        font-family: 'Gotham Pro';
+        font-size: 16px;
+        width: 472px;
+      }
+
+      &__button {
+        width: 207px;
+        height: 54px;
+        font-family: 'Gotham Pro';
+        font-size: 17px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .service-image {
+      width: 592px;
+      height: 555px;
+      background-image: url("../img/women_service.png");
+      background-size: cover;
+      box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+      border-radius: 32px;
+    }
+  }
+
+  .subscriptions {
+    margin-top: 120px;
+
+    &__typography {
+      text-align: center;
+      font-family: 'Gotham Pro';
+      font-size: 32px;
+    }
+
+    .subs {
+      display: flex;
+      flex-direction: column;
+
+      gap: 16px;
+
+      &-sub {
+        height: 342px;
+        background-color: #ffffff;
+        display: flex;
+        border-top-left-radius: 32px;
+        border-bottom-left-radius: 32px;
+
+        &-about {
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          color: #000000;
+          box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+          padding: 40px 60px;
+
+          &__typography {
+            margin: 0;
+            font-family: 'Gotham Pro';
+            font-size: 26px;
+            width: 472px;
+          }
+
+          &__text {
+            margin: 0;
+            font-family: 'Gotham Pro';
+            font-size: 16px;
+            width: 440px;
+          }
+
+          &__button {
+            width: 147px;
+            height: 54px;
+
+            font-family: 'Gotham Pro';
+            font-size: 17px;
+            background: #1749B3;
+            color: #ffffff;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+
+        &-img {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+          border-radius: 35px;
+        }
+
+        .netflix {
+          background-color: #000000;
+        }
+
+        .youtube {
+          background-color: #E1DCEB;
+        }
+      }
+    }
+  }
+}
