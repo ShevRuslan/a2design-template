@@ -1,0 +1,77 @@
+.footer {
+  background-color: $blue;
+  padding: 40px 120px 12px 120px;
+  font-family: 'Gotham Pro';
+  margin-top: 120px;
+  color: $white;
+
+  &-navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-about {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+
+        &__logo {
+          width: 60px;
+          height: auto;
+        }
+      }
+
+      .content {
+        width: 179px;
+      }
+    }
+
+    &-subs {
+      &__typography {
+        font-family: 'Gotham Pro';
+        font-size: 18px;
+        line-height: 150%;
+      }
+
+      .subs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+
+        &-sub {
+          &__link {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &-aside {
+      .social {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px
+      }
+
+      .language {
+        text-align: right;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-documents {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-weight: 100;
+  }
+}

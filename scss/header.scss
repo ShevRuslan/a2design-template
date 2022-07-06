@@ -34,7 +34,7 @@
 
     &__element {
       a {
-        color: #333333;
+        color: $black2;
         text-decoration: none;
         font-family: "Gotham Pro";
       }
@@ -55,21 +55,13 @@
     &-language {
       &__ln {
         font-family: "Gotham Pro";
-        color: #333333;
+        color: $black2;
       }
     }
 
     &-button {
-      &__login {
-        background: #1749B3;
-        border: none;
-        border-radius: 12px;
-        color: #FFFFFF;
-        font-family: "Gotham Pro";
-        font-size: 17px;
-        width: 136px;
-        height: 40px;
-        cursor: pointer;
+      .header-login-button__login {
+        padding: 9px 41px;
       }
     }
   }

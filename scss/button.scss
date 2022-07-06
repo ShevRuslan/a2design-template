@@ -1,0 +1,65 @@
+.button-blue {
+  border: 1px solid $blue;
+  background: $blue;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.button-blue:hover {
+  background-color: #FFFFFF;
+  color: $black1;
+}
+
+.button-blue:active {
+  background: #4B84FD;
+}
+
+.button-grey {
+  border: 1px solid $black1;
+  background: $black1;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.button-grey:hover {
+  background-color: #FFFFFF;
+  color: $black1;
+}
+
+.button-blue:active {
+  background: #606060;
+}
+
+.button-white {
+  border: 1px solid $white;
+  background: $white;
+  border-radius: 16px;
+  color: #000000;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.button-white:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+.button-white:active {
+  background: #606060;
+}
