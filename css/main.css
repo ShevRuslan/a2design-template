@@ -455,6 +455,16 @@ table {
   letter-spacing: 0.01em;
 }
 
+.modal-wrapper .modal-main .form-forget .form .wrapper-forget-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.modal-wrapper .modal-main .form-forget .form .wrapper-forget-inputs .form-wrapper-input {
+  width: 50%;
+}
+
 .modal-wrapper .modal-main-bottom {
   display: flex;
   flex-direction: column;

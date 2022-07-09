@@ -120,6 +120,20 @@
         }
       }
 
+      .form-forget {
+        .form {
+          .wrapper-forget-inputs {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .form-wrapper-input {
+              width: 50%;
+            }
+          }
+        }
+      }
+
       &-bottom {
         display: flex;
         flex-direction: column;
