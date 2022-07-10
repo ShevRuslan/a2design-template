@@ -6,9 +6,9 @@
 @import "footer.scss";
 @import "modal.scss";
 
-body {
-  overflow: hidden;
-}
+// body {
+//   overflow: hidden;
+// }
 
 h1 {
   margin: 0;
@@ -362,6 +362,7 @@ main {
 @media screen and (max-width: 1200px) {
   main {
     padding: 0px 32px;
+    padding-bottom: 120px;
 
     .preview {
       .discount {
@@ -533,6 +534,7 @@ main {
 @media screen and (max-width: 600px) {
   main {
     padding: 0px 24px;
+    padding-bottom: 80px;
 
     .preview {
       flex-direction: column-reverse;

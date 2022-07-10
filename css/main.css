@@ -270,6 +270,7 @@ table {
   padding: 40px 120px 12px 120px;
   font-family: 'Gotham Pro';
   color: #FFFFFF;
+  font-size: 16px;
 }
 
 .footer-navigation {
@@ -298,6 +299,12 @@ table {
 
 .footer-navigation-about .content {
   width: 179px;
+}
+
+.footer-navigation .wrapper-subs {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .footer-navigation-subs__typography {
@@ -334,6 +341,63 @@ table {
   justify-content: space-between;
   margin-top: 40px;
   font-weight: 100;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 0px;
+  }
+  .footer-navigation {
+    padding: 32px 40px;
+  }
+  .footer-navigation-about .about__name {
+    display: none;
+  }
+  .footer-navigation-about .about__logo {
+    width: 44px;
+    height: 44px;
+  }
+  .footer-documents {
+    padding: 12px 32px;
+    border-top: 1px solid rgba(247, 247, 247, 0.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-navigation {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-navigation-about, .footer-navigation-subs, .footer-navigation-aside {
+    width: 100%;
+  }
+  .footer-navigation-about .content {
+    width: 100%;
+  }
+  .footer-navigation-about .about {
+    justify-content: flex-start;
+  }
+  .footer-navigation-about .about__name {
+    display: block;
+  }
+  .footer-navigation .wrapper-subs {
+    width: 100%;
+  }
+  .footer-navigation-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-navigation-aside .social {
+    justify-content: flex-start;
+  }
+  .footer-documents {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-documents__text {
+    text-align: center;
+  }
 }
 
 .modal-wrapper {
@@ -628,10 +692,6 @@ table {
   .modal-wrapper .forget .third-step-forget .form-forget .form .wrapper-forget-inputs .form-wrapper-input {
     width: 100%;
   }
-}
-
-body {
-  overflow: hidden;
 }
 
 h1 {
@@ -978,6 +1038,7 @@ main .invite-friends-link__link {
 @media screen and (max-width: 1200px) {
   main {
     padding: 0px 32px;
+    padding-bottom: 120px;
   }
   main .preview .discount {
     padding: 20px;
@@ -1092,6 +1153,7 @@ main .invite-friends-link__link {
 @media screen and (max-width: 600px) {
   main {
     padding: 0px 24px;
+    padding-bottom: 80px;
   }
   main .preview {
     flex-direction: column-reverse;
