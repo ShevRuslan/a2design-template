@@ -6,9 +6,9 @@
 @import "footer.scss";
 @import "modal.scss";
 
-// body {
-//   overflow: hidden;
-// }
+body {
+  overflow: hidden;
+}
 
 h1 {
   margin: 0;
@@ -666,6 +666,7 @@ main {
 
       &-button {
         width: 100%;
+
       }
 
     }
