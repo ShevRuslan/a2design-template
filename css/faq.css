@@ -394,4 +394,23 @@ main .faq-support__button {
   width: 243px;
   height: 54px;
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0px 32px;
+    padding-bottom: 100px;
+  }
+  main .faq-elements-element {
+    padding: 20px;
+  }
+  main .faq-elements-element__text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0px 24px;
+  }
+}
 /*# sourceMappingURL=faq.css.map */

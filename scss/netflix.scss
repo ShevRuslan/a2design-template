@@ -238,3 +238,134 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0px 32px;
+    padding-bottom: 100px;
+
+    .invite-friends {
+      padding: 32px;
+      gap: 32px;
+      align-items: center;
+
+      &-text {
+        width: 45%;
+        justify-content: flex-start;
+
+        &__content {
+          width: 100%;
+        }
+      }
+
+      &-link {
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        height: 104px;
+        padding: 0px;
+      }
+    }
+
+
+    .faq {
+      &-elements {
+        &-element {
+          padding: 20px;
+
+          &__text {
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    .wrapper-plans {
+      .plans {
+        .plan-footer {
+          padding: 32px 16px;
+        }
+
+        .plan-main {
+          padding: 20px 16px;
+          font-size: 15px;
+        }
+
+        .plan-header {
+          &__typography {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0px 24px;
+
+    .wrapper-plans {
+      .plans {
+        flex-direction: column;
+        gap: 16px;
+
+        .plan {
+          width: 100%;
+        }
+
+        .plan-footer {
+          padding: 32px 16px;
+        }
+
+        .plan-main {
+          padding: 20px 16px;
+          font-size: 15px;
+        }
+
+        .plan-header {
+          &__typography {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    .wrapper-plans {
+      &-text {
+        &__typography {
+          font-size: 28px;
+        }
+      }
+
+      &-swap {
+        &-element {
+          &__text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .invite-friends {
+      padding: 20px;
+      flex-direction: column;
+
+      &-text {
+        width: 100%;
+
+        &__content {
+          width: 100%;
+        }
+      }
+
+      &-link {
+        width: 100%;
+
+        &__link {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
