@@ -261,6 +261,10 @@ table {
   background: #606060;
 }
 
+.fw {
+  width: 100% !important;
+}
+
 .footer {
   background-color: #1749B3;
   padding: 40px 120px 12px 120px;

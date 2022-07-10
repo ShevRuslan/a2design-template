@@ -531,10 +531,6 @@ table {
   font-weight: bold;
 }
 
-body {
-  overflow: hidden;
-}
-
 h1 {
   margin: 0;
   font-family: 'Gotham Pro';
@@ -550,11 +546,13 @@ main {
 
 main .preview {
   display: flex;
+  justify-content: space-between;
   gap: 16px;
   padding-top: 60px;
 }
 
 main .preview .discount {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -591,12 +589,15 @@ main .preview .discount__button {
 }
 
 main .preview .service-image {
-  width: 592px;
+  width: 50%;
   height: 555px;
   background-image: url("../img/women_service.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
   border-radius: 32px;
+  background-color: #FFFFFF;
 }
 
 main .subscriptions {
@@ -666,7 +667,7 @@ main .subscriptions .subs-sub .spotify {
 }
 
 main .subscriptions .subs-sub .spotify img {
-  width: 100%;
+  width: inherit;
   height: 100%;
 }
 
@@ -689,6 +690,7 @@ main .how-it-works .steps {
 main .how-it-works .steps-step {
   width: 33%;
   display: flex;
+  flex-direction: column;
   background: #FFFFFF;
   box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
   border-radius: 32px;
@@ -697,13 +699,18 @@ main .how-it-works .steps-step {
   height: 260px;
 }
 
-main .how-it-works .steps-step-text {
+main .how-it-works .steps-step-top {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-main .how-it-works .steps-step-text__content {
+main .how-it-works .steps-step-top__typography {
+  align-self: flex-end;
+  display: inline;
+}
+
+main .how-it-works .steps-step-bottom__content {
+  width: 50%;
   font-family: 'Gotham Pro';
   margin-top: 26px;
 }
@@ -809,6 +816,7 @@ main .faq-support__button {
   height: 54px;
 }
 
+main .request,
 main .invite-friends {
   margin-top: 20px;
   display: flex;
@@ -819,6 +827,7 @@ main .invite-friends {
   padding: 40px 80px;
 }
 
+main .request-text,
 main .invite-friends-text {
   display: flex;
   flex-direction: column;
@@ -826,6 +835,7 @@ main .invite-friends-text {
   color: #FFFFFF;
 }
 
+main .request-text__content,
 main .invite-friends-text__content {
   width: 508px;
   font-family: 'Gotham Pro';
@@ -834,6 +844,7 @@ main .invite-friends-text__content {
   line-height: 150%;
 }
 
+main .request-link,
 main .invite-friends-link {
   display: flex;
   flex-direction: column;
@@ -842,6 +853,7 @@ main .invite-friends-link {
   padding: 28px 72px;
 }
 
+main .request-link__text,
 main .invite-friends-link__text {
   font-family: 'Gotham Pro';
   font-size: 20px;
@@ -849,6 +861,7 @@ main .invite-friends-link__text {
   text-align: center;
 }
 
+main .request-link__link,
 main .invite-friends-link__link {
   font-family: 'Gotham Pro';
   font-weight: 400;
@@ -857,5 +870,222 @@ main .invite-friends-link__link {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #1749B3;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0px 32px;
+  }
+  main .preview .discount {
+    padding: 20px;
+    height: 100%;
+  }
+  main .preview .discount__text {
+    width: 100%;
+  }
+  main .preview .discount__typography {
+    width: 100%;
+    font-size: 28px;
+  }
+  main .preview .service-image {
+    height: inherit;
+  }
+  main .subscriptions .subs-sub {
+    height: 200px;
+  }
+  main .subscriptions .subs-sub-about {
+    width: 50%;
+    padding: 50px 32px;
+    gap: 24px;
+  }
+  main .subscriptions .subs-sub-about__text {
+    display: none;
+  }
+  main .subscriptions .subs-sub-about__typography {
+    width: 100%;
+    font-size: 22px;
+  }
+  main .subscriptions .subs-sub-img {
+    width: 50%;
+  }
+  main .subscriptions .subs-sub-img img {
+    width: inherit;
+  }
+  main .how-it-works .steps-step {
+    padding: 20px;
+    height: 146px;
+    justify-content: space-between;
+  }
+  main .how-it-works .steps-step-top__image {
+    width: 81px;
+    height: 81px;
+  }
+  main .how-it-works .steps-step-top__typography {
+    align-self: center;
+    font-size: 19px;
+  }
+  main .how-it-works .steps-step-bottom__content {
+    width: 100%;
+  }
+  main .invite-friends {
+    padding: 32px;
+    gap: 32px;
+    align-items: center;
+  }
+  main .invite-friends-text {
+    width: 45%;
+    justify-content: flex-start;
+  }
+  main .invite-friends-text__content {
+    width: 100%;
+  }
+  main .invite-friends-link {
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 104px;
+    padding: 0px;
+  }
+  main .about-us-blocks-block:nth-child(1) .wrapper {
+    padding: 22px;
+  }
+  main .about-us-blocks-block__content {
+    width: 100%;
+    font-size: 17px;
+  }
+  main .about-us-blocks-block__logo {
+    width: 60px;
+    height: 60px;
+  }
+  main .faq-elements-element {
+    padding: 20px;
+  }
+  main .faq-elements-element__text {
+    width: 70%;
+  }
+  main .request {
+    padding: 32px;
+    gap: 32px;
+    align-items: center;
+  }
+  main .request-text {
+    width: 60%;
+    justify-content: flex-start;
+  }
+  main .request-text__content {
+    width: 100%;
+  }
+  main .request-text__typography {
+    font-size: 19px;
+  }
+  main .request-button {
+    width: 40%;
+  }
+  main .request-button__button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0px 24px;
+  }
+  main .preview {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .preview .discount {
+    height: 100%;
+    width: inherit;
+    gap: 30px;
+  }
+  main .preview .discount__button {
+    width: 100%;
+  }
+  main .preview .service-image {
+    height: 276px;
+    width: 100%;
+  }
+  main .subscriptions .subs-sub {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  main .subscriptions .subs-sub-about {
+    width: calc(100% - 40px);
+    padding: 32px 20px;
+  }
+  main .subscriptions .subs-sub-about__text {
+    display: block;
+    width: 100%;
+  }
+  main .subscriptions .subs-sub-about__typography {
+    width: 100%;
+    font-size: 22px;
+  }
+  main .subscriptions .subs-sub-about__button {
+    width: 100%;
+  }
+  main .subscriptions .subs-sub .youtube {
+    padding: 90px 0px;
+  }
+  main .subscriptions .subs-sub .youtube img {
+    width: auto;
+  }
+  main .subscriptions .subs-sub .netflix img {
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+  }
+  main .subscriptions .subs-sub-img {
+    width: 100%;
+  }
+  main .subscriptions .subs-sub-img img {
+    width: 100%;
+    height: auto;
+  }
+  main .how-it-works .steps {
+    flex-direction: column;
+  }
+  main .how-it-works .steps-step {
+    width: inherit;
+  }
+  main .invite-friends {
+    padding: 20px;
+    flex-direction: column;
+  }
+  main .invite-friends-text {
+    width: 100%;
+  }
+  main .invite-friends-text__content {
+    width: 100%;
+  }
+  main .invite-friends-link {
+    width: 100%;
+  }
+  main .invite-friends-link__link {
+    font-size: 14px;
+  }
+  main .about-us-blocks {
+    flex-direction: column-reverse;
+  }
+  main .about-us-blocks-block:nth-child(1) {
+    width: inherit;
+  }
+  main .about-us-blocks-block:nth-child(1) .wrapper {
+    padding: 22px;
+  }
+  main .about-us-blocks-block:nth-child(2) {
+    width: inherit;
+    height: 412px;
+  }
+  main .request {
+    flex-direction: column;
+  }
+  main .request-text {
+    width: 100%;
+  }
+  main .request-button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

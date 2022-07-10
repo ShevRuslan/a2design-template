@@ -6,9 +6,9 @@
 @import "footer.scss";
 @import "modal.scss";
 
-body {
-  overflow: hidden;
-}
+// body {
+//   overflow: hidden;
+// }
 
 h1 {
   margin: 0;
@@ -24,10 +24,12 @@ main {
 
   .preview {
     display: flex;
+    justify-content: space-between;
     gap: 16px;
     padding-top: 60px;
 
     .discount {
+      width: 50%;
       display: flex;
       flex-direction: column;
       gap: 50px;
@@ -64,12 +66,15 @@ main {
     }
 
     .service-image {
-      width: 592px;
+      width: 50%;
       height: 555px;
       background-image: url("../img/women_service.png");
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
       border-radius: 32px;
+      background-color: $white;
     }
   }
 
@@ -140,7 +145,7 @@ main {
           background-color: #1ED760;
 
           img {
-            width: 100%;
+            width: inherit;
             height: 100%;
           }
         }
@@ -165,6 +170,7 @@ main {
       &-step {
         width: 33%;
         display: flex;
+        flex-direction: column;
         background: #FFFFFF;
         box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
         border-radius: 32px;
@@ -172,12 +178,20 @@ main {
         padding-bottom: 30px;
         height: 260px;
 
-        &-text {
+        &-top {
           display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
+          justify-content: space-between;
 
+          &__typography {
+            align-self: flex-end;
+            display: inline;
+          }
+
+        }
+
+        &-bottom {
           &__content {
+            width: 50%;
             font-family: 'Gotham Pro';
             margin-top: 26px;
           }
@@ -291,6 +305,7 @@ main {
     }
   }
 
+  .request,
   .invite-friends {
     margin-top: 20px;
     display: flex;
@@ -340,6 +355,319 @@ main {
 
         color: $blue;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0px 32px;
+
+    .preview {
+      .discount {
+        padding: 20px;
+        height: 100%;
+
+        &__text {
+          width: 100%;
+        }
+
+        &__typography {
+          width: 100%;
+          font-size: 28px;
+        }
+      }
+
+      .service-image {
+        height: inherit;
+      }
+    }
+
+    .subscriptions {
+      .subs {
+        &-sub {
+          height: 200px;
+
+          &-about {
+            width: 50%;
+            padding: 50px 32px;
+            gap: 24px;
+
+            &__text {
+              display: none;
+            }
+
+            &__typography {
+              width: 100%;
+              font-size: 22px;
+            }
+          }
+
+          &-img {
+            width: 50%;
+
+            img {
+              width: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    .how-it-works {
+      .steps {
+        &-step {
+          padding: 20px;
+          height: 146px;
+          justify-content: space-between;
+
+          &-top {
+            &__image {
+              width: 81px;
+              height: 81px;
+            }
+
+            &__typography {
+              align-self: center;
+              font-size: 19px;
+            }
+          }
+
+          &-bottom {
+            &__content {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .invite-friends {
+      padding: 32px;
+      gap: 32px;
+      align-items: center;
+
+      &-text {
+        width: 45%;
+        justify-content: flex-start;
+
+        &__content {
+          width: 100%;
+        }
+      }
+
+      &-link {
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        height: 104px;
+        padding: 0px;
+      }
+    }
+
+    .about-us {
+      &-blocks {
+        &-block:nth-child(1) {
+          .wrapper {
+            padding: 22px;
+          }
+        }
+
+        &-block {
+
+          &__content {
+            width: 100%;
+            font-size: 17px;
+          }
+
+          &__logo {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+
+    .faq {
+      &-elements {
+        &-element {
+          padding: 20px;
+
+          &__text {
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    .request {
+      padding: 32px;
+      gap: 32px;
+      align-items: center;
+
+      &-text {
+        width: 60%;
+        justify-content: flex-start;
+
+        &__content {
+          width: 100%;
+        }
+
+        &__typography {
+          font-size: 19px;
+        }
+      }
+
+      &-button {
+        width: 40%;
+
+        &__button {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0px 24px;
+
+    .preview {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .discount {
+        height: 100%;
+        width: inherit;
+        gap: 30px;
+
+        &__button {
+          width: 100%;
+        }
+      }
+
+      .service-image {
+        height: 276px;
+        width: 100%;
+      }
+    }
+
+    .subscriptions {
+      .subs {
+        &-sub {
+          flex-direction: column-reverse;
+          height: 100%;
+
+          &-about {
+            width: calc(100% - 40px);
+            padding: 32px 20px;
+
+            &__text {
+              display: block;
+              width: 100%;
+            }
+
+            &__typography {
+              width: 100%;
+              font-size: 22px;
+            }
+
+            &__button {
+              width: 100%;
+            }
+          }
+
+          .youtube {
+            padding: 90px 0px;
+
+            img {
+              width: auto;
+            }
+          }
+
+          .netflix {
+            img {
+              width: 100%;
+              height: auto;
+              border-radius: 35px;
+            }
+          }
+
+          &-img {
+            width: 100%;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .how-it-works {
+      .steps {
+        flex-direction: column;
+
+        &-step {
+          width: inherit;
+        }
+      }
+    }
+
+    .invite-friends {
+      padding: 20px;
+      flex-direction: column;
+
+      &-text {
+        width: 100%;
+
+        &__content {
+          width: 100%;
+        }
+      }
+
+      &-link {
+        width: 100%;
+
+        &__link {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .about-us {
+      &-blocks {
+        flex-direction: column-reverse;
+
+        &-block:nth-child(1) {
+          width: inherit;
+
+          .wrapper {
+            padding: 22px;
+          }
+        }
+
+        &-block:nth-child(2) {
+          width: inherit;
+          height: 412px;
+        }
+      }
+    }
+
+    .request {
+      flex-direction: column;
+
+      &-text {
+        width: 100%;
+      }
+
+      &-button {
+        width: 100%;
+      }
+
     }
   }
 }
