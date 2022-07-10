@@ -67,6 +67,127 @@
   padding: 9px 41px;
 }
 
+.header-mobile-icon {
+  display: none;
+}
+
+.header-mobile-icon__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 2px 32px;
+  }
+  .header-navbar-wrapper {
+    gap: 10px;
+  }
+  .header-login {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .header {
+    padding: 0px;
+    position: relative;
+  }
+  .header-logo {
+    padding: 11px 24px;
+  }
+  .header-logo__img {
+    width: 32px;
+    height: 32px;
+  }
+  .header-navbar {
+    padding: 11px 24px;
+    display: none;
+  }
+  .header-login {
+    padding: 11px 24px;
+    display: none;
+  }
+  .header-mobile-icon {
+    padding: 11px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-mobile-menu {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: #ECF3FB;
+    width: calc(100% - 48px);
+    height: 95vh;
+    top: 90%;
+    padding: 24px;
+    font-family: 'Gotham Pro';
+  }
+  .header-mobile-menu-nav {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(177, 177, 177, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .header-mobile-menu-navbar-element {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .header-mobile-menu-navbar-element:hover {
+    background: #F7F7F7;
+  }
+  .header-mobile-menu-navbar-element:hover .header-mobile-menu-navbar__img {
+    filL: #4E33FF;
+  }
+  .header-mobile-menu-nav:nth-child(2) {
+    margin-top: 16px;
+  }
+  .header-mobile-menu-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 68px;
+  }
+  .header-mobile-menu-auth__login {
+    background-color: transparent !important;
+    color: #1749B3 !important;
+  }
+  .header-mobile-menu-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+  }
+  .header-mobile-menu-social {
+    font-size: 18px;
+    gap: 18px;
+  }
+  .header-mobile-menu-social__element {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    position: relative;
+  }
+  .header-logo__content {
+    display: none;
+  }
+}
+
 html,
 body,
 div,
