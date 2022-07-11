@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 @font-face {
   font-family: 'Gotham Pro';
   src: url(../../fonts/gothampro_medium.ttf);
@@ -815,6 +816,619 @@ table {
   }
 }
 
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url(../../fonts/gothampro_medium.ttf);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 120px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo__img {
+  width: 55px;
+  height: auto;
+}
+
+.header-logo__content {
+  font-family: 'Manrope', sans-serif;
+  padding-left: 8px;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-navbar-wrapper {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 44px;
+}
+
+.header-navbar__element a {
+  color: #333333;
+  text-decoration: none;
+  font-family: "Gotham Pro";
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 46px;
+}
+
+.header-login-social {
+  display: flex;
+  gap: 14px;
+}
+
+.header-login-language__ln {
+  font-family: "Gotham Pro";
+  color: #333333;
+}
+
+.header-login-button .header-login-button__login {
+  padding: 9px 41px;
+}
+
+.header-mobile-icon {
+  display: none;
+}
+
+.header-mobile-icon__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 2px 32px;
+  }
+  .header-navbar-wrapper {
+    gap: 10px;
+  }
+  .header-login {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .header {
+    padding: 0px;
+    position: relative;
+  }
+  .header-logo {
+    padding: 11px 24px;
+  }
+  .header-logo__img {
+    width: 32px;
+    height: 32px;
+  }
+  .header-navbar {
+    padding: 11px 24px;
+    display: none;
+  }
+  .header-login {
+    padding: 11px 24px;
+    display: none;
+  }
+  .header-mobile-icon {
+    padding: 11px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-mobile-menu {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: #ECF3FB;
+    width: calc(100% - 48px);
+    height: 95vh;
+    top: 90%;
+    padding: 24px;
+    font-family: 'Gotham Pro';
+  }
+  .header-mobile-menu-nav {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(177, 177, 177, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .header-mobile-menu-navbar-element {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .header-mobile-menu-navbar-element:hover {
+    background: #F7F7F7;
+  }
+  .header-mobile-menu-navbar-element:hover .header-mobile-menu-navbar__img {
+    filL: #4E33FF;
+  }
+  .header-mobile-menu-nav:nth-child(2) {
+    margin-top: 16px;
+  }
+  .header-mobile-menu-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 68px;
+  }
+  .header-mobile-menu-auth__login {
+    background-color: transparent !important;
+    color: #1749B3 !important;
+  }
+  .header-mobile-menu-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+  }
+  .header-mobile-menu-social {
+    font-size: 18px;
+    gap: 18px;
+  }
+  .header-mobile-menu-social__element {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    position: relative;
+  }
+  .header-logo__content {
+    display: none;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button-blue {
+  border: 1px solid #1749B3;
+  background: #1749B3;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-blue:hover {
+  background-color: #FFFFFF;
+  color: #171717;
+}
+
+.button-blue:active {
+  background: #4B84FD;
+}
+
+.button-grey {
+  border: 1px solid #171717;
+  background: #171717;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-grey:hover {
+  background-color: #FFFFFF;
+  color: #171717;
+}
+
+.button-blue:active {
+  background: #606060;
+}
+
+.button-white {
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 16px;
+  color: #000000;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-white:hover {
+  background-color: #1749B3;
+  color: #FFFFFF;
+}
+
+.button-white:active {
+  background: #606060;
+}
+
+.fw {
+  width: 100% !important;
+}
+
+.footer {
+  background-color: #1749B3;
+  padding: 40px 120px 12px 120px;
+  font-family: 'Gotham Pro';
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-navigation-about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-navigation-about .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-navigation-about .about__logo {
+  width: 60px;
+  height: auto;
+}
+
+.footer-navigation-about .content {
+  width: 179px;
+}
+
+.footer-navigation .wrapper-subs {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footer-navigation-subs__typography {
+  font-family: 'Gotham Pro';
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.footer-navigation-subs .subs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-navigation-subs .subs-sub__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-navigation-aside .social {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-navigation-aside .language {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.footer-documents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 0px;
+  }
+  .footer-navigation {
+    padding: 32px 40px;
+  }
+  .footer-navigation-about .about__name {
+    display: none;
+  }
+  .footer-navigation-about .about__logo {
+    width: 44px;
+    height: 44px;
+  }
+  .footer-documents {
+    padding: 12px 32px;
+    border-top: 1px solid rgba(247, 247, 247, 0.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-navigation {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-navigation-about, .footer-navigation-subs, .footer-navigation-aside {
+    width: 100%;
+  }
+  .footer-navigation-about .content {
+    width: 100%;
+  }
+  .footer-navigation-about .about {
+    justify-content: flex-start;
+  }
+  .footer-navigation-about .about__name {
+    display: block;
+  }
+  .footer-navigation .wrapper-subs {
+    width: 100%;
+  }
+  .footer-navigation-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-navigation-aside .social {
+    justify-content: flex-start;
+  }
+  .footer-documents {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-documents__text {
+    text-align: center;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Gotham Pro';
+  font-size: 36px;
+  width: 100%;
+}
+
+main {
+  background-color: #ECF3FB;
+  padding: 0px 120px;
+  font-family: 'Gotham Pro';
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+main .faq__typography {
+  text-align: center;
+  margin-bottom: 37px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+main .faq-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main .faq-elements-element {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+  border-radius: 32px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 32px 40px;
+  font-family: "Gotham Pro";
+}
+
+main .faq-elements-element-show {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .faq-elements-element__open {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(23, 23, 23, 0.05);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+main .faq-elements-element-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+main .faq-support {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+main .faq-support__button {
+  width: 243px;
+  height: 54px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0px 32px;
+    padding-bottom: 100px;
+  }
+  main .faq-elements-element {
+    padding: 20px;
+  }
+  main .faq-elements-element__text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0px 24px;
+  }
+}
+
 h1 {
   margin: 0;
   font-family: 'Gotham Pro';
@@ -1051,53 +1665,6 @@ main .about-us-blocks-block__logo {
 main .about-us-blocks-block__content {
   width: 470px;
   line-height: 150%;
-}
-
-main .faq {
-  margin-top: 128px;
-}
-
-main .faq__typography {
-  text-align: center;
-  margin-bottom: 37px;
-  font-weight: bold;
-}
-
-main .faq-elements {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-main .faq-elements-element {
-  background: #FFFFFF;
-  box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
-  border-radius: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 40px;
-  font-family: "Gotham Pro";
-}
-
-main .faq-elements-element__open {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background: rgba(23, 23, 23, 0.05);
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-main .faq-support {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-main .faq-support__button {
-  width: 243px;
-  height: 54px;
 }
 
 main .request,
