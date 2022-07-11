@@ -33,6 +33,10 @@
     }
 
     &__element {
+      display: flex;
+      align-items: center;
+      position: relative;
+
       a {
         color: $black2;
         text-decoration: none;
@@ -53,6 +57,9 @@
     }
 
     &-language {
+      position: relative;
+      cursor: pointer;
+
       &__ln {
         font-family: "Gotham Pro";
         color: $black2;
@@ -78,6 +85,41 @@
 
   &-mobile-menu {
     display: none;
+  }
+}
+
+.navbar-close {
+  display: none;
+}
+
+.navbar-show {
+  position: absolute;
+  top: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Gotham Pro';
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__element {
+      text-align: left;
+
+      a {
+        text-decoration: none;
+        color: $black1;
+      }
+
+      a:hover {
+        color: $blue;
+      }
+    }
   }
 }
 
@@ -133,11 +175,16 @@
       position: absolute;
       z-index: 9999;
       background-color: $background;
-      width: calc(100% - 48px);
-      height: 95vh;
+      width: 100%;
       top: 90%;
-      padding: 24px;
       font-family: 'Gotham Pro';
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.2s ease-out;
+
+      .wrapper-mobile-menu {
+        padding: 24px;
+      }
 
       &-nav {
         background: #FFFFFF;

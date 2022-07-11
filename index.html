@@ -15,8 +15,21 @@
       </div>
       <nav class="header-navbar">
         <ul class="header-navbar-wrapper">
-          <li class="header-navbar__element">
-            <a href="#">Subscriptions</a>
+          <li class="header-navbar__element navbar-open">
+            <a href="#">Subscriptions <img src="img/arrow-down.svg" alt=""> </a>
+            <div class="navbar-show navbar-close">
+              <ul class="navbar-show-wrapper">
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">Netflix</a>
+                </li>
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">Youtube</a>
+                </li>
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">Spotify</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="header-navbar__element">
             <a href="#">FAQ</a>
@@ -34,8 +47,21 @@
           <img src="img/whatsapp.svg" alt="" class="header-login-social__element" />
           <img src="img/telegramm.svg" alt="" class="header-login-social__element" />
         </div>
-        <div class="header-login-language">
-          <span class="header-login-language__ln">EN</span>
+        <div class="header-login-language navbar-open">
+          <span class="header-login-language__ln">EN <img src="img/arrow-down.svg" alt=""> </span>
+          <div class="navbar-show navbar-close">
+            <ul class="navbar-show-wrapper">
+              <li class="navbar-show-wrapper__element">
+                <a href="#">English</a>
+              </li>
+              <li class="navbar-show-wrapper__element">
+                <a href="#">Ukraine</a>
+              </li>
+              <li class="navbar-show-wrapper__element">
+                <a href="#">Russian</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header-login-button">
           <button class="header-login-button__login button-blue">Log in</button>
@@ -47,50 +73,53 @@
         </button>
       </div>
       <div class="header-mobile-menu">
-        <nav class="header-mobile-menu-nav">
-          <ul class="header-mobile-menu-navbar">
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar__img">
-              Home
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img">
-              Home
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img">
-              Home
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img">
-              Home
-            </li>
-          </ul>
-        </nav>
-        <nav class="header-mobile-menu-nav">
-          <ul class="header-mobile-menu-navbar">
-            <li class="header-mobile-menu-navbar-element">
-              Netflix
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              Youtube
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              Spotify
-            </li>
-          </ul>
-        </nav>
-        <div class="header-mobile-menu-auth">
-          <button class="header-mobile-menu-auth__login button-blue">Login</button>
-          <button class="header-mobile-menu-auth__reg button-blue">Sign up</button>
-        </div>
-        <div class="header-mobile-menu-bottom">
-          <div class="header-mobile-menu-social">
-            <img src="img/whatsapp.svg" alt="" class="header-mobile-menu-social__element" />
-            <img src="img/telegramm.svg" alt="" class="header-mobile-menu-social__element" />
+        <div class="wrapper-mobile-menu"> 
+
+          <nav class="header-mobile-menu-nav">
+            <ul class="header-mobile-menu-navbar">
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar__img">
+                Home
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img">
+                Home
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img">
+                Home
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img">
+                Home
+              </li>
+            </ul>
+          </nav>
+          <nav class="header-mobile-menu-nav">
+            <ul class="header-mobile-menu-navbar">
+              <li class="header-mobile-menu-navbar-element">
+                Netflix
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                Youtube
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                Spotify
+              </li>
+            </ul>
+          </nav>
+          <div class="header-mobile-menu-auth">
+            <button class="header-mobile-menu-auth__login button-blue">Login</button>
+            <button class="header-mobile-menu-auth__reg button-blue">Sign up</button>
           </div>
-          <div class="header-mobile-menu-language">
-            <span class="header-mobile-menu-language__ln">EN</span>
+          <div class="header-mobile-menu-bottom">
+            <div class="header-mobile-menu-social">
+              <img src="img/whatsapp.svg" alt="" class="header-mobile-menu-social__element" />
+              <img src="img/telegramm.svg" alt="" class="header-mobile-menu-social__element" />
+            </div>
+            <div class="header-mobile-menu-language">
+              <span class="header-mobile-menu-language__ln">EN</span>
+            </div>
           </div>
         </div>
       </div>
@@ -343,8 +372,18 @@
             <img src="img/whatsapp-fill.svg" alt="" class="social__whatsapp" />
             <img src="img/telegram-fill.svg" alt="" class="social__whatsapp" />
           </div>
-          <div class="language">
-            <span class="language__ln">EN</span>
+          <div class="language navbar-open">
+            <span class="language__ln">EN <img src="img/arrow-down-white.svg" alt=""> </span>
+            <div class="navbar-show navbar-close">
+              <ul class="navbar-show-wrapper">
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">EN</a>
+                </li>
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">RU</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
