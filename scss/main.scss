@@ -60,9 +60,16 @@ main {
         font-family: 'Gotham Pro';
         font-size: 17px;
         background: $white;
+        border: 1px solid $white;
         border-radius: 16px;
-        border: none;
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          border-color: $white;
+          background-color: $blue;
+          color: $white;
+        }
       }
     }
 
@@ -308,6 +315,10 @@ main {
         text-transform: uppercase;
 
         color: $blue;
+
+        &:hover {
+          color: $black1;
+        }
       }
     }
   }

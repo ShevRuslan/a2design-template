@@ -10,16 +10,31 @@
   <body>
     <header class="header">
       <div class="header-logo">
-        <img src="img/logo.png" alt="Logo" class="header-logo__img" />
-        <span class="header-logo__content"> DiscountsOnServices </span>
+        <a href="index.html" class="header-logo-home">
+          <img src="img/logo.png" alt="Logo" class="header-logo__img" />
+          <span class="header-logo__content"> DiscountsOnServices </span>
+        </a>
       </div>
       <nav class="header-navbar">
         <ul class="header-navbar-wrapper">
-          <li class="header-navbar__element">
-            <a href="#">Subscriptions</a>
+          <li class="header-navbar__element navbar-open">
+            <a href="#">Subscriptions <img src="img/arrow-down.svg" alt="" /> </a>
+            <div class="navbar-show navbar-close">
+              <ul class="navbar-show-wrapper">
+                <li class="navbar-show-wrapper__element">
+                  <a href="netflix.html">Netflix</a>
+                </li>
+                <li class="navbar-show-wrapper__element">
+                  <a href="youtube.html">Youtube</a>
+                </li>
+                <li class="navbar-show-wrapper__element">
+                  <a href="spotify.html">Spotify</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="header-navbar__element">
-            <a href="#">FAQ</a>
+            <a href="faq.html">FAQ</a>
           </li>
           <li class="header-navbar__element">
             <a href="#">Support</a>
@@ -34,8 +49,21 @@
           <img src="img/whatsapp.svg" alt="" class="header-login-social__element" />
           <img src="img/telegramm.svg" alt="" class="header-login-social__element" />
         </div>
-        <div class="header-login-language">
-          <span class="header-login-language__ln">EN</span>
+        <div class="header-login-language navbar-open">
+          <span class="header-login-language__ln">EN <img src="img/arrow-down.svg" alt="" /> </span>
+          <div class="navbar-show navbar-close">
+            <ul class="navbar-show-wrapper">
+              <li class="navbar-show-wrapper__element">
+                <a href="#">English</a>
+              </li>
+              <li class="navbar-show-wrapper__element">
+                <a href="#">Ukraine</a>
+              </li>
+              <li class="navbar-show-wrapper__element">
+                <a href="#">Russian</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header-login-button">
           <button class="header-login-button__login button-blue">Log in</button>
@@ -47,44 +75,46 @@
         </button>
       </div>
       <div class="header-mobile-menu">
-        <nav class="header-mobile-menu-nav">
-          <ul class="header-mobile-menu-navbar">
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar__img" />
-              Home
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img" />
-              Home
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img" />
-              Home
-            </li>
-            <li class="header-mobile-menu-navbar-element">
-              <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img" />
-              Home
-            </li>
-          </ul>
-        </nav>
-        <nav class="header-mobile-menu-nav">
-          <ul class="header-mobile-menu-navbar">
-            <li class="header-mobile-menu-navbar-element">Netflix</li>
-            <li class="header-mobile-menu-navbar-element">Youtube</li>
-            <li class="header-mobile-menu-navbar-element">Spotify</li>
-          </ul>
-        </nav>
-        <div class="header-mobile-menu-auth">
-          <button class="header-mobile-menu-auth__login button-blue">Login</button>
-          <button class="header-mobile-menu-auth__reg button-blue">Sign up</button>
-        </div>
-        <div class="header-mobile-menu-bottom">
-          <div class="header-mobile-menu-social">
-            <img src="img/whatsapp.svg" alt="" class="header-mobile-menu-social__element" />
-            <img src="img/telegramm.svg" alt="" class="header-mobile-menu-social__element" />
+        <div class="wrapper-mobile-menu">
+          <nav class="header-mobile-menu-nav">
+            <ul class="header-mobile-menu-navbar">
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar__img" />
+                <a href="index.html">Home</a>
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img" />
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img" />
+                <a href="index.html">Home</a>
+              </li>
+              <li class="header-mobile-menu-navbar-element">
+                <img src="img/home.svg" alt="" class="header-mobile-menu-navbar-element__img" />
+                <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header-mobile-menu-nav">
+            <ul class="header-mobile-menu-navbar">
+              <li class="header-mobile-menu-navbar-element"><a href="netflix.html">Netflix</a></li>
+              <li class="header-mobile-menu-navbar-element"><a href="youtube.html">Youtube</a></li>
+              <li class="header-mobile-menu-navbar-element"><a href="spotify.html">Spotify</a></li>
+            </ul>
+          </nav>
+          <div class="header-mobile-menu-auth">
+            <button class="header-mobile-menu-auth__login button-blue header-login-button__login">Login</button>
+            <button class="header-mobile-menu-auth__reg button-blue">Sign up</button>
           </div>
-          <div class="header-mobile-menu-language">
-            <span class="header-mobile-menu-language__ln">EN</span>
+          <div class="header-mobile-menu-bottom">
+            <div class="header-mobile-menu-social">
+              <img src="img/whatsapp.svg" alt="" class="header-mobile-menu-social__element" />
+              <img src="img/telegramm.svg" alt="" class="header-mobile-menu-social__element" />
+            </div>
+            <div class="header-mobile-menu-language">
+              <span class="header-mobile-menu-language__ln">EN</span>
+            </div>
           </div>
         </div>
       </div>
@@ -284,13 +314,13 @@
             <span class="footer-navigation-subs__typography"> Subscriptions </span>
             <ul class="subs">
               <li class="subs-sub">
-                <a href="#" class="subs-sub__link">Netflix</a>
+                <a href="netflix.html" class="subs-sub__link">Netflix</a>
               </li>
               <li class="subs-sub">
-                <a href="#" class="subs-sub__link">Youtube Premium</a>
+                <a href="youtube.html" class="subs-sub__link">Youtube Premium</a>
               </li>
               <li class="subs-sub">
-                <a href="#" class="subs-sub__link">Spotify</a>
+                <a href="spotify.html" class="subs-sub__link">Spotify</a>
               </li>
             </ul>
           </div>
@@ -301,10 +331,10 @@
                 <a href="#" class="subs-sub__link">About</a>
               </li>
               <li class="subs-sub">
-                <a href="#" class="subs-sub__link">FAQ</a>
+                <a href="faq.html" class="subs-sub__link">FAQ</a>
               </li>
               <li class="subs-sub">
-                <a href="#" class="subs-sub__link">Support</a>
+                <a href="faq.html" class="subs-sub__link">Support</a>
               </li>
             </ul>
           </div>
@@ -314,8 +344,18 @@
             <img src="img/whatsapp-fill.svg" alt="" class="social__whatsapp" />
             <img src="img/telegram-fill.svg" alt="" class="social__whatsapp" />
           </div>
-          <div class="language">
-            <span class="language__ln">EN</span>
+          <div class="language navbar-open">
+            <span class="language__ln">EN <img src="img/arrow-down-white.svg" alt="" /> </span>
+            <div class="navbar-show navbar-close">
+              <ul class="navbar-show-wrapper">
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">EN</a>
+                </li>
+                <li class="navbar-show-wrapper__element">
+                  <a href="#">RU</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -325,6 +365,289 @@
         <span class="footer-documents__text">Developed by ....</span>
       </section>
     </footer>
+    <!-- MODAL LOGIN -->
+    <div class="modal-wrapper modal-login">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <h1 class="modal-header-left__typography">Log in</h1>
+            <div class="modal-header-left-content">
+              <span>New user?</span>
+              <a href="#">Create an account</a>
+            </div>
+          </div>
+          <div class="modal-header-right">
+            <button class="modal-header-right__button">
+              <img src="img/close.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="modal-main">
+          <div class="form-login">
+            <form action="#" class="form">
+              <div class="form-wrapper-input">
+                <span class="form-wrapper-input__text"> Email Address </span>
+                <input type="text" class="form-wrapper-input__input" placeholder="Enter your e-mail" />
+              </div>
+              <div class="form-wrapper-input">
+                <span class="form-wrapper-input__text"> Password </span>
+                <input type="password" class="form-wrapper-input__input" placeholder="*******" />
+              </div>
+              <div class="form-wrapper-button">
+                <a href="#" class="form-wrapper-button__link"> Forgot password? </a>
+                <button class="form-wrapper-button__button button-blue">Log in</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-main-bottom">
+            <div class="modal-main-bottom-hr">
+              <div class="hr"></div>
+              <span class="modal-main-bottom-hr__text"> Or sign in with </span>
+              <div class="hr"></div>
+            </div>
+            <div class="modal-main-bottom-socials">
+              <div class="modal-main-bottom-socials-social">
+                <img src="img/google.svg" alt="" class="modal-main-bottom-socials-social__img" />
+              </div>
+              <div class="modal-main-bottom-socials-social">
+                <img src="img/facebook.svg" alt="" class="modal-main-bottom-socials-social__img" />
+              </div>
+              <div class="modal-main-bottom-socials-social">
+                <img src="img/apple.svg" alt="" class="modal-main-bottom-socials-social__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p class="modal-footer__content">
+            Protected by reCAPTCHA and subject to the Google Privacy Policy and Terms of Service.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL CREATE -->
+    <div class="modal-wrapper modal-signup">
+      <div class="modal create-account">
+        <div class="first-step">
+          <div class="modal-header">
+            <div class="modal-header-left">
+              <h1 class="modal-header-left__typography">Create an account</h1>
+              <div class="modal-header-left-content">
+                <span>Already have an account? </span>
+                <a href="#">Sign in</a>
+              </div>
+            </div>
+            <div class="modal-header-right">
+              <button class="modal-header-right__button">
+                <img src="img/close.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="modal-main">
+            <div class="form-login">
+              <form action="#" class="form">
+                <div class="form-wrapper-input">
+                  <span class="form-wrapper-input__text"> User name </span>
+                  <input type="text" class="form-wrapper-input__input" placeholder="Enter your name" />
+                </div>
+                <div class="form-wrapper-input">
+                  <span class="form-wrapper-input__text"> Email Address </span>
+                  <input type="text" class="form-wrapper-input__input" placeholder="Enter your e-mail" />
+                </div>
+                <div class="form-wrapper-input">
+                  <span class="form-wrapper-input__text"> Password </span>
+                  <input type="password" class="form-wrapper-input__input" placeholder="*******" />
+                </div>
+                <div class="form-wrapper-checkbox">
+                  <input type="checkbox" name="agree" class="form-wrapper-checkbox__checkbox" />
+                  <p class="form-wrapper-checkbox__text">
+                    By creating an account you agree to our Privacy Policy and Terms of Service.
+                  </p>
+                </div>
+                <div class="form-wrapper-button">
+                  <button class="form-wrapper-button__button button-blue fw">Sign up</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-main-bottom">
+              <div class="modal-main-bottom-hr">
+                <div class="hr"></div>
+                <span class="modal-main-bottom-hr__text"> Or sign in with </span>
+                <div class="hr"></div>
+              </div>
+              <div class="modal-main-bottom-socials">
+                <div class="modal-main-bottom-socials-social">
+                  <img src="img/google.svg" alt="" class="modal-main-bottom-socials-social__img" />
+                </div>
+                <div class="modal-main-bottom-socials-social">
+                  <img src="img/facebook.svg" alt="" class="modal-main-bottom-socials-social__img" />
+                </div>
+                <div class="modal-main-bottom-socials-social">
+                  <img src="img/apple.svg" alt="" class="modal-main-bottom-socials-social__img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-step">
+          <div class="modal-header">
+            <div class="modal-header-left">
+              <h1 class="modal-header-left__typography">Email verification</h1>
+              <div class="modal-header-left-content">
+                <p>
+                  Please enter the 6-digit verification code that was sent to name@gmail,com. The code is valid for 30
+                  minutes.
+                </p>
+              </div>
+            </div>
+            <div class="modal-header-right">
+              <button class="modal-header-right__button">
+                <img src="img/close.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="modal-main">
+            <div class="form-login">
+              <form action="#" class="form">
+                <div class="form-wrapper-input">
+                  <span class="form-wrapper-input__text"> Email verification code </span>
+                  <input type="text" class="form-wrapper-input__input" placeholder="XXXX" />
+                </div>
+                <div class="form-wrapper-button">
+                  <button class="form-wrapper-button__button button-blue fw">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#">Didn`t receive the code?</a>
+          </div>
+        </div>
+
+        <div class="third-step">
+          <div class="modal-header">
+            <div class="modal-header-left"></div>
+            <div class="modal-header-right">
+              <button class="modal-header-right__button">
+                <img src="img/close.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="modal-main">
+            <div class="modal-main-typo">
+              <h1 class="modal-main-typo__typography">Successful registration</h1>
+            </div>
+            <div class="modal-main-text">
+              <p class="modal-main__content">
+                By optimizing our work and using internal tools, we were able to lower the prices while keeping the
+                highest possible.
+              </p>
+            </div>
+            <div class="modal-main-button">
+              <button class="modal-main-button__button fw button-blue">Continue work</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- MODAL FORGET -->
+          <div class="modal-wrapper modal-forget">
+            <div class="modal forget">
+      
+              <div class="first-step-forget">
+                <div class="modal-header">
+                  <div class="modal-header-left">
+                    <h1 class="modal-header-left__typography">Forget password</h1>
+                    <div class="modal-header-left-content">
+                      <span>We will send reset code in this email.</span>
+                    </div>
+                  </div>
+                  <div class="modal-header-right">
+                    <button class="modal-header-right__button">
+                      <img src="img/close.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-main">
+                  <div class="form-login">
+                    <form action="#" class="form">
+                      <div class="form-wrapper-input">
+                        <span class="form-wrapper-input__text"> Email Address </span>
+                        <input type="text" class="form-wrapper-input__input" placeholder="Enter your e-mail" />
+                      </div>
+                      <div class="form-wrapper-button">
+                        <button class="form-wrapper-button__button button-blue fw">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              </div>
+      
+            <div class="second-step-forget">
+                <div class="modal-header">
+                  <div class="modal-header-left">
+                    <h1 class="modal-header-left__typography">Forget password</h1>
+                    <div class="modal-header-left-content">
+                      <span>We will send reset code in this emaill.</span>
+                    </div>
+                  </div>
+                  <div class="modal-header-right">
+                    <button class="modal-header-right__button">
+                      <img src="img/close.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-main">
+                  <div class="form-login">
+                    <form action="#" class="form">
+                      <div class="form-wrapper-input">
+                        <span class="form-wrapper-input__text"> Email verification code </span>
+                        <input type="text" class="form-wrapper-input__input" placeholder="XXXX" />
+                      </div>
+                      <div class="form-wrapper-button">
+                        <button class="form-wrapper-button__button button-blue fw">Restore password</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              </div>
+      
+            <div class="third-step-forget">
+                <div class="modal-header">
+                  <div class="modal-header-left">
+                    <h1 class="modal-header-left__typography">Forget password</h1>
+                    <div class="modal-header-left-content">
+                      <span>Enter a new password</span>
+                    </div>
+                  </div>
+                  <div class="modal-header-right">
+                    <button class="modal-header-right__button">
+                      <img src="img/close.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-main">
+                  <div class="form-forget">
+                    <form action="#" class="form">
+                      <div class="wrapper-forget-inputs">
+                        <div class="form-wrapper-input">
+                          <span class="form-wrapper-input__text"> Password </span>
+                          <input type="password" class="form-wrapper-input__input" placeholder="********" />
+                        </div>
+                        <div class="form-wrapper-input">
+                          <span class="form-wrapper-input__text"> Confirm password </span>
+                          <input type="password" class="form-wrapper-input__input" placeholder="********" />
+                        </div>
+                      </div>
+                      <div class="form-wrapper-button">
+                        <button class="form-wrapper-button__button button-blue fw">Restore Password</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              </div>
+          </div>
     <script src="js/script.js"></script>
   </body>
 </html>
