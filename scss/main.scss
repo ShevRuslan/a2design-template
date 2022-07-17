@@ -298,6 +298,16 @@ main {
       border-radius: 16px;
       padding: 28px 72px;
 
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        img {
+          cursor: pointer;
+        }
+      }
+
       &__text {
         font-family: 'Gotham Pro';
         font-size: 20px;

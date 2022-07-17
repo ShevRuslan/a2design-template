@@ -1950,6 +1950,16 @@ main .invite-friends-link {
   padding: 28px 72px;
 }
 
+main .invite-friends-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+main .invite-friends-link-wrapper img {
+  cursor: pointer;
+}
+
 main .invite-friends-link__text {
   font-family: 'Gotham Pro';
   font-size: 20px;

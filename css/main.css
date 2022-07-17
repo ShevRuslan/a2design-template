@@ -2185,6 +2185,18 @@ main .invite-friends-link {
   padding: 28px 72px;
 }
 
+main .request-link-wrapper,
+main .invite-friends-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+main .request-link-wrapper img,
+main .invite-friends-link-wrapper img {
+  cursor: pointer;
+}
+
 main .request-link__text,
 main .invite-friends-link__text {
   font-family: 'Gotham Pro';
