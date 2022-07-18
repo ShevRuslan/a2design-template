@@ -2124,7 +2124,7 @@ main .about-us-blocks-block:nth-child(1) .wrapper {
 }
 
 main .about-us-blocks-block:nth-child(2) {
-  background-image: url("../../img/women_logo.png");
+  background-image: url("../img/women_logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
